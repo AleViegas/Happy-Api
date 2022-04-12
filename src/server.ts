@@ -34,4 +34,4 @@ app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')))
 // error handler personalizado - ./errors/handler
 app.use(errorHandler)
 
-app.listen(3333)
+app.listen(process.env.PORT || 3000)
