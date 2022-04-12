@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "build": "tsc",
+    "start": "node dist/server.js",
+    "postinstall": "tsc",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeormcreate": "ts-node-dev ./node_modules/typeorm/cli.js migration:create -n create_images",
     "typeormrun": "ts-node-dev ./node_modules/typeorm/cli.js migration:run",
