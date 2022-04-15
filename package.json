@@ -7,8 +7,8 @@
     "start": "node dist/server.js",
     "postinstall": "tsc",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "typeormcreate": "ts-node-dev ./node_modules/typeorm/cli.js migration:create -n create_images",
-    "typeormrun": "ts-node-dev ./node_modules/typeorm/cli.js migration:run",
+    "typeormcreate": "node ./node_modules/typeorm/cli.js migration:create -n create_images",
+    "typeormrun": "node ./node_modules/typeorm/cli.js migration:run",
     "typeormrevert": "ts-node-dev ./node_modules/typeorm/cli.js migration:revert"
   },
   "keywords": [],
