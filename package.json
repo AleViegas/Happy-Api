@@ -7,7 +7,7 @@
     "start": "node dist/server.js",
     "postinstall": "tsc",
     "build": "node ./node_modules/typeorm/cli.js migration:create -n create_images",
-    "poststart": "node ./node_modules/typeorm/cli.js migration:run",
+    "postbuild": "node ./node_modules/typeorm/cli.js migration:run",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeormcreate": "node ./node_modules/typeorm/cli.js migration:create -n create_images",
     "typeormrun": "node ./node_modules/typeorm/cli.js migration:run",
