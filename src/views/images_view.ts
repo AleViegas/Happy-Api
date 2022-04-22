@@ -6,7 +6,7 @@ export default {
     render(image: Image) {
         return {
             id: image.id,
-            url: `https://aleviegas-happy-api.herokuapp.com//uploads/${image.path}`
+            url: `https://aleviegas-happy-api.herokuapp.com/uploads/${image.path}`
         } 
     },
 
